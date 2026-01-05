@@ -120,6 +120,12 @@ public class BoatAutoPilot : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Skip if there's no BoatManager (e.g. in Prefab Edit mode)
+        if (BoatManager.Singleton == null)
+        {
+            return;
+        }
+
         // Neighborhood radius.
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, BoatManager.Singleton.neighborhoodRadius);
