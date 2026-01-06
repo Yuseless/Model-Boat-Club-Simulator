@@ -20,3 +20,4 @@ MonoBehaviour:
   separationAmount: 1.1
   cohesionAmount: 0.3
   alignmentAmount: 0.5
+  scale: {x: 0.375, y: 0.375, z: 0.375}

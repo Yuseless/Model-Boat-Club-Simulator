@@ -26,4 +26,6 @@ public class BoatData : ScriptableObject
 
     [Range(0, 3)]
     public float alignmentAmount = 0.5f;
+
+    public Vector3 scale = new Vector3(0.4f,0.4f,0.4f);
 }
